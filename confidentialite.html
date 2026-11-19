@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — Tsuzuki</title>
+<meta name="description" content="Politique de confidentialité de l'extension Tsuzuki.">
+<link rel="icon" href="icone.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  :root {
+    --fond:#fdfcfd; --carte:#ffffff; --encre:#1b1920; --doux:#666073; --trait:#e8e3ec;
+    --accent:#c0415f; --accent-fond:#fdf1f4;
+    --titre:"Space Grotesk","Segoe UI",system-ui,sans-serif;
+    --texte:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond:#0f0e13; --carte:#17161d; --encre:#ece9f2; --doux:#a09aae; --trait:#2a2733;
+      --accent:#ff7fa1; --accent-fond:#1f1419; color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fond); color:var(--encre); font-family:var(--texte);
+         font-size:16px; line-height:1.68; }
+  main { max-width:680px; margin:0 auto; padding:56px 20px 72px; }
+  .marque { display:flex; align-items:center; gap:11px; margin-bottom:26px; }
+  .marque span { font-family:var(--titre); font-weight:700; font-size:15px; letter-spacing:.01em; }
+  h1 { font-family:var(--titre); font-weight:700; font-size:clamp(27px,5.4vw,35px);
+       line-height:1.16; letter-spacing:-.02em; margin:0; text-wrap:balance; }
+  .date { color:var(--doux); font-size:14px; margin:8px 0 30px; }
+  .resume { background:var(--accent-fond); border:1px solid var(--trait); border-radius:13px;
+            padding:17px 19px; margin-bottom:14px; }
+  .resume p { margin:0; font-size:16.5px; font-weight:500; }
+  h2 { font-family:var(--titre); font-weight:500; font-size:19px; letter-spacing:-.01em; margin:34px 0 8px; }
+  p { margin:0 0 14px; }
+  ul { margin:0 0 14px; padding-left:21px; display:flex; flex-direction:column; gap:7px; }
+  li::marker { color:var(--accent); }
+  strong { font-weight:600; }
+  em { font-style:normal; color:var(--accent); font-weight:500; }
+  a { color:var(--accent); }
+  .adresse { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:15px;
+             background:var(--carte); border:1px solid var(--trait); border-radius:8px;
+             padding:3px 9px; display:inline-block; user-select:all; }
+  footer { margin-top:38px; padding-top:20px; border-top:1px solid var(--trait);
+           color:var(--doux); font-size:14.5px; }
+  footer p { margin:0 0 7px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marque">
+    <img src="icone.png" width="30" height="30" alt="" style="border-radius:8px">
+    <span>Tsuzuki</span>
+  </div>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Dernière mise à jour : 19 novembre 2026</p>
+
+  <div class="resume">
+    <p>Tsuzuki ne collecte aucune donnée pour son auteur, n'en vend aucune et n'affiche aucune
+    publicité. Vos épisodes restent sur votre appareil et, si vous activez la synchronisation,
+    dans votre propre Google Drive.</p>
+  </div>
+
+  <h2>Ce que l'extension enregistre sur votre appareil</h2>
+  <ul>
+    <li>Pour chaque épisode regardé sur Anime-Sama, Voiranime ou FR Anime : le titre de l'anime,
+    la saison, le numéro d'épisode, la langue, l'adresse de la page, la position de lecture, la
+    durée et la date.</li>
+    <li>Le nom de l'appareil (par exemple « Chrome · Windows »), pour indiquer où un épisode a été
+    regardé.</li>
+    <li>Vos réglages et, si vous les connectez, les jetons d'accès à Google Drive, AniList et
+    MyAnimeList. Ce ne sont pas vos mots de passe : l'extension ne les voit jamais.</li>
+    <li>Un journal de diagnostic, affiché dans les réglages.</li>
+  </ul>
+  <p>Ces données sont gardées par le navigateur, sur votre appareil, et disparaissent quand vous
+  désinstallez l'extension.</p>
+
+  <h2>Synchronisation avec Google Drive (facultative)</h2>
+  <p>Si vous l'activez, l'extension copie la liste de vos épisodes ci-dessus dans un fichier caché
+  de <strong>votre</strong> Google Drive (le dossier réservé aux applications, invisible dans
+  Drive), pour la retrouver sur vos autres appareils. Elle demande uniquement l'accès à ce
+  dossier, <em>drive.appdata</em> : elle ne peut ni voir, ni lire, ni modifier vos autres
+  fichiers. Elle lit aussi l'adresse e-mail du compte, seulement pour l'afficher dans les
+  réglages.</p>
+  <p>Ces données ne passent par aucun serveur de l'auteur : elles vont directement de votre
+  navigateur à Google.</p>
+  <p><strong>Données utilisateur Google.</strong> L'utilisation et le transfert par Tsuzuki des
+  informations reçues des API Google respectent les
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">règles relatives aux
+  données utilisateur des services API Google</a>, y compris les exigences d'utilisation limitée.
+  Elles servent uniquement à la synchronisation décrite ici, ne sont ni transmises à des tiers,
+  ni utilisées pour de la publicité, ni lues par une personne.</p>
+
+  <h2>AniList et MyAnimeList (facultatif)</h2>
+  <p>Si vous connectez votre compte, l'extension affiche votre liste et, quand un épisode est vu à
+  90 %, indique à ce service le nouvel épisode atteint. Rien d'autre n'est envoyé. Chaque service
+  applique sa propre politique de confidentialité.</p>
+
+  <h2>Services publics interrogés</h2>
+  <ul>
+    <li><strong>AniList</strong> (graphql.anilist.co) reçoit le titre de l'anime lu sur la page, et
+    renvoie son identifiant et son affiche.</li>
+    <li><strong>AniSkip</strong> (api.aniskip.com) reçoit cet identifiant et le numéro d'épisode, et
+    renvoie les minutages de l'opening et de l'ending.</li>
+  </ul>
+
+  <h2>La bande-son</h2>
+  <p>Pour repérer le début d'un générique, l'extension mesure le niveau sonore de la vidéo en
+  cours. Cette analyse a lieu entièrement dans votre navigateur, en mémoire vive : aucun son n'est
+  enregistré, copié ni envoyé.</p>
+
+  <h2>Les pages que vous consultez</h2>
+  <p>L'extension s'exécute sur toutes les pages, parce que le lecteur vidéo est presque toujours
+  hébergé sur un autre domaine que le site, et que ce domaine change d'un épisode à l'autre. Sur
+  une page sans lecteur, elle ne fait rien. Elle n'enregistre les épisodes que sur Anime-Sama,
+  Voiranime et FR Anime, et n'enregistre jamais votre historique de navigation.</p>
+
+  <h2>Si vous envoyez un signalement</h2>
+  <p>Les réglages savent réunir un fichier de diagnostic et préparer un courriel. Rien ne part sans
+  votre geste. Le fichier contient l'adresse de la page de l'épisode, ce que l'extension en a
+  compris, l'état du lecteur, la version du navigateur et les journaux ; les jetons présents dans
+  l'adresse y sont masqués.</p>
+
+  <h2>Vos droits et la suppression</h2>
+  <ul>
+    <li>Dans l'extension, « Effacer l'historique » efface l'historique sur tous vos appareils.</li>
+    <li>Désactiver la synchronisation ou désinstaller l'extension arrête tout envoi.</li>
+    <li>Pour supprimer le fichier caché : Google Drive → Paramètres → Gérer les applications →
+    Tsuzuki → « Supprimer les données d'application cachées ».</li>
+    <li>Pour retirer l'accès : votre compte Google → Sécurité → Applications tierces → Tsuzuki.</li>
+  </ul>
+  <p>L'auteur ne détenant aucune de vos données, il n'y a rien à consulter ni à supprimer de son
+  côté.</p>
+
+  <h2>Nous écrire</h2>
+  <p><span class="adresse">animelover.app@gmail.com</span></p>
+
+  <footer>
+    <p>Extension « Tsuzuki », distribuée gratuitement, sans suivi ni publicité.</p>
+    <p><a href="./">Accueil</a></p>
+  </footer>
+</main>
+</body>
+</html>
